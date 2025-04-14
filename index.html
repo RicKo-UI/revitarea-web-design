@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="src/output.css" rel="stylesheet">
+</head>
+<body class="font-body">
+  
+    <!-- Navbar -->
+    <header class="p-6 shadow-md fixed top-0 left-0 w-full bg-white z-50">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="src/Images/Logo.png" class="w-32" alt="">
+            </div>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 text-gray-700">
+                <a href="#" class="hover:text-primary">Home</a>
+                <a href="#" class="hover:text-primary">About</a>
+                <a href="#" class="hover:text-primary">Services</a>
+                <a href="#" class="hover:text-primary">Contact</a>
+            </nav>
+            <div class="hidden md:block">
+                <button class="bg-primary text-white px-5 py-2 rounded-full hover:bg-green-300">Book Now</button>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden flex-col space-y-6 mt-8 text-gray-700 md:hidden">
+          <a href="#" class="hover:text-primary block">Home</a>
+          <a href="#" class="hover:text-primary block">About</a>
+          <a href="#" class="hover:text-primary block">Services</a>
+          <a href="#" class="hover:text-primary block">Contact</a>
+          <button class="bg-primary text-white px-5 py-2 rounded-full hover:bg-green-300 w-max">Book Now</button>
+        </div>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-40 md:px-16 lg:px-24">
+        <div class="flex flex-wrap justify-between items-start">
+            <!-- Left Side: Header and Button -->
+            <div class="w-full lg:w-1/2 self-center px-4 ">
+                <h1 class="font-[700] text-5xl text-dark mb-8 max-w-[420px]">Empowering Life Through Wellness with Care</h1>
+                <div class="flex flex-wrap gap-3">
+                    <a href="" class="text-base font-[500] text-white bg-primary py-3 px-5 rounded-full">Schedule Your Treatment</a>
+                    <a href="" class="text-base font-[500] text-dark bg-white border-dark border-1 py-3 px-5 rounded-full">Our Sevice</a>
+                </div>
+            </div>
+            <!-- end -->
+
+            <!-- Right Side: Feature List -->
+            <div class="w-full self-center px-4 mt-8 space-y-4 lg:w-1/2 max-w-[560px]">
+                <div class="flex items-center bg-neutral rounded-full px-5 py-4 gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6" class="fill-primary w-5">
+                        <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clipRule="evenodd" />
+                    </svg>
+                    <p class="text-sm text-gray-700">Personalize treat with professional doctor</p>
+                </div>
+                <div class="flex items-center bg-gray-100 rounded-full px-5 py-4 gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6" class="fill-primary w-5">
+                        <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clipRule="evenodd" />
+                    </svg>
+                    <p class="text-sm text-gray-700">High-quality infusions delivered to your location</p>
+                </div>
+                <div class="flex items-center bg-gray-100 rounded-full px-5 py-4 gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6" class="fill-primary w-5">
+                        <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clipRule="evenodd" />
+                    </svg>
+                    <p class="text-sm text-gray-700">Seamless care and support, on your schedule</p>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+
+        <!-- Hero Image -->
+        <div class="mt-12 px-4">
+            <img src="src/Images/hero-image.png" alt="IV Treatment" class="rounded-xl w-full">
+        </div>
+        <!-- End Hero Image -->
+    </section>
+    <!-- End Hero -->
+
+    <!-- About Section -->
+    <section id="about" class="pt-28 md:px-16 lg:px-24">
+        <div class="flex flex-wrap justify-between items-start gap-8">
+            <!-- Left Side -->
+            <div class="w-full self-center px-4 lg:w-1/2 max-w-[620px]">
+                <h1 class="font-[700] text-4xl text-primary mb-4">You're in Good Hand</h1>
+                <p class="text-base font-normal text-dark mb-8">At Revitara we believe that wellness should be effortless, personalized, and accessible — no matter where you are. That’s why we bring medical infusion therapy directly to your doorstep, whether you're at home, a villa, or a hotel. </p>
+                <a class="bg-primary text-white px-5 py-3 rounded-full hover:bg-green-300 w-max inline-block">Book Now</a>
+            </div>
+
+            <!-- Right Side -->
+            <div class="w-full self-center content-center px-4 space-y-4 lg:w-1/2 max-w-[420px]">
+                <div class="flex flex-row gap-16">
+                    <div>
+                        <h3 class="text-4xl font-[700] text-primary">188+</h3>
+                        <p class="text-sm text-dark">Happy Customers</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-[700] text-primary">77+</h3>
+                        <p class="text-sm text-dark">Expert Doctor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Service Section -->
+    <section id="service" class="pt-40 md:px-16 lg:px-24">
+        <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center">
+                <h1 class="text-4xl font-[700] text-primary mb-4">What We Offer</h1>
+                <p class="text-sm font-normal text-dark">We offer safe, high-quality IV treatments tailored to your needs. We bringing wellness and recovery directly to your door</p>
+            </div>
+        </div>
+        <div class="flex flex-wrap py-8">
+            <!-- Card #1 -->
+            <div class="px-4 w-full lg:w-1/3">
+                <div class="bg-neutral rounded-lg mb-8 transition-all duration-300 hover:bg-primary group">
+                    <div class="py-8 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 fill-primary group-hover:fill-white">
+                            <path fillRule="evenodd" d="M16.098 2.598a3.75 3.75 0 1 1 3.622 6.275l-1.72.46V12a.75.75 0 0 1-.22.53l-.75.75a.75.75 0 0 1-1.06 0l-.97-.97-7.94 7.94a2.56 2.56 0 0 1-1.81.75 1.06 1.06 0 0 0-.75.31l-.97.97a.75.75 0 0 1-1.06 0l-.75-.75a.75.75 0 0 1 0-1.06l.97-.97a1.06 1.06 0 0 0 .31-.75c0-.68.27-1.33.75-1.81L11.69 9l-.97-.97a.75.75 0 0 1 0-1.06l.75-.75A.75.75 0 0 1 12 6h2.666l.461-1.72c.165-.617.49-1.2.971-1.682Zm-3.348 7.463L4.81 18a1.06 1.06 0 0 0-.31.75c0 .318-.06.63-.172.922a2.56 2.56 0 0 1 .922-.172c.281 0 .551-.112.75-.31l7.94-7.94-1.19-1.19Z" clipRule="evenodd" />
+                        </svg>
+                        <h4 class="font-bold text-2xl text-dark mt-5 mb-3 group-hover:text-white">Infusion Therapy</h4>
+                        <p class="text-base font-normal text-dark mb-5 group-hover:text-white">Replenish, restore, and re-energize with personalized IV infusions designed to support hydration, immunity, and overall wellness all from the comfort of your space.</p>
+                        <a href="#" class="text-base font-[500] text-primary group-hover:text-white">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card #2 -->
+            <div class="px-4 w-full lg:w-1/3">
+                <div class="bg-neutral rounded-lg mb-8 transition-all duration-300 hover:bg-primary group">
+                    <div class="py-8 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 fill-primary group-hover:fill-white">
+                            <path fillRule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clipRule="evenodd" />
+                        </svg>
+                        <h4 class="font-bold text-2xl text-dark mt-5 mb-3 group-hover:text-white">Booster Infusion</h4>
+                        <p class="text-base font-normal text-dark mb-5 group-hover:text-white">Replenish, restore, and re-energize with personalized IV infusions designed to support hydration, immunity, and overall wellness all from the comfort of your space.</p>
+                        <a href="#" class="text-base font-[500] text-primary group-hover:text-white">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card #3 -->
+            <div class="px-4 w-full lg:w-1/3">
+                <div class="bg-neutral rounded-lg mb-8 transition-all duration-300 hover:bg-primary group">
+                    <div class="py-8 px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 fill-primary group-hover:fill-white">
+                            <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                        </svg>                          
+                        <h4 class="font-bold text-2xl text-dark mt-5 mb-3 group-hover:text-white">Medical Check Up</h4>
+                        <p class="text-base font-normal text-dark mb-5 group-hover:text-white">Replenish, restore, and re-energize with personalized IV infusions designed to support hydration, immunity, and overall wellness all from the comfort of your space.</p>
+                        <a href="#" class="text-base font-[500] text-primary group-hover:text-white">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Service -->
+
+    <!-- Partner Section -->
+    <section id="partner" class="pt-24 md:px-16 lg:px-24">
+        <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center">
+                <h1 class="text-4xl font-[700] text-dark">Our Collaborate</h1>
+            </div>
+        </div>
+        <div class="w-full px-4 py-12">
+            <div class="flex flex-wrap items-center justify-center">
+                <img src="src/Images/beckers-hospital-review.svg" alt="" class="max-w-[160px] mx-4 py-4 lg:mx-6 ">
+                <img src="src/Images/Frame 29.svg" alt="" class="max-w-[160px] mx-4 py-4 lg:mx-6 ">
+                <img src="src/Images/fresenius-medical-care-1.svg" alt="" class="max-w-[160px] mx-4 py-4 lg:mx-6 ">
+                <img src="src/Images/hospital-batista-memorial.svg" alt="" class="max-w-[160px] mx-4 py-4 lg:mx-6 ">
+            </div>
+        </div>
+    </section>
+    <!-- End Partner -->
+
+    <!-- Review Section -->
+    <section id="review" class="pt-40 md:px-16 lg:px-24">
+        <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center">
+                <h1 class="text-3xl font-[700] text-dark">Let’s See the Wellness Stories Shared by Our Clients</h1>
+            </div>
+        </div>
+        <div class="flex flex-wrap py-8">
+            <div class="w-full px-4 lg:w-1/3">
+                <div class="bg-neutral rounded-lg mb-8">
+                    <div class="py-8 px-4">
+                        <img src="src/Icon/semicolon.svg" class="mb-8" alt="">
+                        <p class="text-base font-normal text-dark mb-8">I booked an infusion while staying in Bali and it was amazing. The nurse came right to my villa and made me feel so comfortable. I felt refreshed within an hour!</p>
+                        <div class="flex flex-row gap-3">
+                            <img src="src/Images/Avatar1.png" class="w-12 rounded-full" alt="">
+                            <div class="flex flex-col">
+                                <p>Johny Doe</p>
+                                <div class="flex flex-row">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6" class="w-5 fill-primary">
+                                        <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                                    </svg>
+                                    <p>5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full px-4 lg:w-1/3">
+                <div class="bg-neutral rounded-lg mb-8">
+                    <div class="py-8 px-4">
+                        <img src="src/Icon/semicolon.svg" class="mb-8" alt="">
+                        <p class="text-base font-normal text-dark mb-8">Super professional, easy to book, and the results were real. My energy levels improved and I felt more focused the next day. Highly recommend the booster infusion</p>
+                        <div class="flex flex-row gap-3">
+                            <img src="src/Images/Avatar1.png" class="w-12 rounded-full" alt="">
+                            <div class="flex flex-col">
+                                <p>Johny Doe</p>
+                                <div class="flex flex-row">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6" class="w-5 fill-primary">
+                                        <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                                    </svg>
+                                    <p>5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full px-4 lg:w-1/3">
+                <div class="bg-neutral rounded-lg mb-8">
+                    <div class="py-8 px-4">
+                        <img src="src/Icon/semicolon.svg" class="mb-8" alt="">
+                        <p class="text-base font-normal text-dark mb-8">I booked an infusion while staying in Bali and it was amazing. The nurse came right to my villa and made me feel so comfortable. I felt refreshed within an hour!</p>
+                        <div class="flex flex-row gap-3">
+                            <img src="src/Images/Avatar1.png" class="w-12 rounded-full" alt="">
+                            <div class="flex flex-col">
+                                <p>Johny Doe</p>
+                                <div class="flex flex-row">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6" class="w-5 fill-primary">
+                                        <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+                                    </svg>
+                                    <p>5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Review -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="pt-40 md:px-16 lg:px-24">
+        <div class="flex flex-wrap mb-8">
+            <!-- Left Section Header -->
+             <div class="w-full self-start px-4 md:w-[60%]">
+                <h1 class="text-4xl font-[700] mb-4">We Share Our <span class="text-primary">Happy</span> Momment</h1>
+             </div>
+
+            <!-- Right Section Content -->
+            <div class="w-full self-start px-4 md:w-[40%]">
+                <p class="text-base font-normal text-dark mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
+                <a class="bg-primary text-white px-5 py-3 rounded-full hover:bg-green-300 w-max inline-block">See More</a>
+            </div>
+        </div>
+
+        <!-- image section -->
+        <div class="flex flex-wrap justify-between items-start">
+            <div class="w-full px-4 md:w-1/2 py-4">
+                <img src="src/Images/gallery1.png" alt="IV Treatment" class="rounded-xl w-full">
+            </div>
+            <div class="w-full px-4 md:w-1/2 py-4">
+                <img src="src/Images/gallery2.png" alt="IV Treatment" class="rounded-xl w-full">
+            </div>
+        </div>
+    </section>
+    <!-- End Gallery -->
+
+    <!-- CTA Section -->
+    <section id="contact" class="pt-24 md:px-16 lg:px-24">
+        <div class="w-full px-4">
+            <div class="mb-16 bg-secondary px-4 py-10 rounded-lg lg:py-24">
+                <div class="max-w-[660px] mx-auto text-center">
+                    <h3 class="text-2xl font-[700] text-dark mb-4 md:text-5xl">Experience Premium Wellness Without Leaving Home</h3>
+                    <p class="font-normal text-base text-dark mb-8">
+                        Our licensed medical team delivers safe, high-quality infusions designed to boost your energy, hydration, and overall well-being, all on your schedule.
+                    </p>
+                    <a class="bg-primary text-white px-5 py-3 rounded-full hover:bg-green-300 w-max inline-block">Schedule Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End CTA -->
+
+    <!-- Footer -->
+    <footer class="bg-neutral py-12">
+        <div class="flex flex-wrap">
+            <div class="w-full px-4 mb-12 md:w-[55%]">
+                <div class="flex items-center space-x-2 mb-4">
+                    <img src="src/Images/Logo.png" class="w-32" alt="">
+                </div>
+                <p class="text-base font-normal text-dark max-w-[400px] mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
+                <p class="text-base font-normal text-primary max-w-[400px] mb-4">Revitara.fusion@gmail.com</p>
+            </div>
+            <div class="w-full px-4 mb-8 md:w-[15%]">
+                <h4 class="font-[500] text-xl text-primary mb-3">Tautan Kami</h4>
+                <ul>
+                    <li>
+                        <a href="" class="text-base font-normal text-slate-400 mb-3 inline-block hover:text-primary">About Us</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-base font-normal text-slate-400 mb-3 inline-block hover:text-primary">Our Service</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-base font-normal text-slate-400 mb-3 inline-block hover:text-primary">Contact</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-base font-normal text-slate-400 mb-3 inline-block hover:text-primary">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full px-4 mb-8 md:w-[15%]">
+                <h4 class="font-[500] text-xl text-primary mb-3">Jasa Kami</h4>
+                <ul>
+                    <li>
+                        <a href="" class="text-base font-normal text-slate-400 mb-3 inline-block hover:text-primary">Infusion Therapy</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-base font-normal text-slate-400 mb-3 inline-block hover:text-primary">Booster Infusion</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-base font-normal text-slate-400 mb-3 inline-block hover:text-primary">Check Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full px-4 mb-8 md:w-[15%]">
+                <h4 class="font-[500] text-xl text-primary mb-3">Sosial</h4>
+                <ul>
+                    <li>
+                        <a href="" class="text-base font-normal text-slate-400 mb-3 inline-block hover:text-primary">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-base font-normal text-slate-400 mb-3 inline-block hover:text-primary">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-base font-normal text-slate-400 mb-3 inline-block hover:text-primary">Tiktok</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script>
+        window.onscroll = function(){
+            const header = document.querySelector('header');
+            const fixedNav = header.offsetTop;
+
+            if(window.pageYOffset > fixedNav){
+                header.classList.add
+            }
+        }
+
+        const toggleBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        toggleBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

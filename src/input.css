@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+    
+    --font-body: "Lato", sans-serif;
+
+
+    --color-primary: #7EA68D;
+    --color-secondary: #F2F8F4;
+    --color-neutral: #F9F9F9;
+    --color-dark: #1A1A1A;
+    
+}
+
+.navbar-fixed{
+    
+}
